@@ -28,7 +28,7 @@ main {
 
 section#register {
     width: 350px;
-    height: 600px;
+    height: 610px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -68,7 +68,7 @@ form div.campo {
     margin: 5px 0px;
     background-color: black;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 form label {
     display: none;
@@ -85,7 +85,7 @@ form div.campo input {
     border: none;
     font-size: 14px;
 
-    transform: translateY(-7px);
+    transform: translateY(-6px);
 }
 
 form #botao-registrar {
