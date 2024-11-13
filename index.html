@@ -15,32 +15,41 @@
             
             </div>
             <div id="formulario">
-                <h1>Register</h1>
+                <h1>Registrar</h1>
                 <p>Seja bem vindo(a). Faça o seu registro para desfrutar do nosso site.</p>
                 <form action="" method="post" autocomplete="on">
                         <div class="campo">
                             <span class="material-icons">person</span> 
-                            <input type="text" name="nome" id="inome"> 
+                            <input type="text" name="nome" id="inome" autocomplete="name" required minlength="3" max="8" placeholder="  seu nome"> 
                             <label for="inome">Primeiro nome</label>
                         </div>
                         <div class="campo">
                             <span class="material-icons">person</span> 
-                            <input type="text" name="sobrenome" id="isobrenome"> 
+                            <input type="text" name="sobrenome" id="isobrenome" autocomplete="name" required minlength="3" maxlength="8" placeholder="  seu sobrenome"> 
                             <label for="isobrenome">Sobrenome</label>
                         </div>
                         <div class="campo">
                             <span class="material-icons">mail</span> 
-                            <input type="email" name="email" id="iemail"> 
+                            <input type="email" name="email" id="iemail" autocomplete="email" required minlength="8" placeholder="  seu e-mail"> 
                             <label for="iemail">E-mail</label>
                         </div>
                         <div class="campo">
                             <span class="material-icons">vpn_key</span> 
-                            <input type="password" name="senha" id="isenha"> 
+                            <input type="password" name="senha" id="isenha" autocomplete="new-password" required minlength="6" placeholder="  sua senha"> 
                             <label for="isenha">Senha</label>
                         </div>
 
                         <input id="botao-registrar" type="submit" value="Registrar">
-                        <a href="esqueceu-senha.html" target="_blank" id="botao-esqueceu-senha">Esqueceu a senha</a>
+
+
+                        <div id="botoes-aside">
+                            <div id="botao-login-area">
+                                <a href="https://wgutto.github.io/projeto-login/" class="botao-aside" id="botao-login">Faça login</a>
+                                <span class="material-icons">login</span>
+                            </div>
+
+                            <a href="esqueceu-senha.html" target="_blank" class="botao-aside">Esqueceu a senha?</a>
+                        </div>
                 </form>
             </div>
         </section>

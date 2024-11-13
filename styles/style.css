@@ -66,12 +66,26 @@ form div.campo {
     height: 40px;
     width: 100%;
     margin: 5px 0px;
-    padding: 5px;
     background-color: black;
     border-radius: 10px;
+    border: 2px solid black;
 }
 form label {
     display: none;
+}
+form div.campo span {
+    font-size: 25px;
+    width: 40px;
+    padding: 5px;
+}
+form div.campo input {
+    height: 100%;
+    width: calc(100% - 45px);
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+
+    transform: translateY(-7px);
 }
 
 form #botao-registrar {
@@ -91,4 +105,21 @@ form #botao-registrar {
 form #botao-registrar:hover {
     background-color: rgb(20, 20, 20);
 }
-
+form #botoes-aside {
+    display: flex;
+    justify-content: space-between;
+}
+form .botao-aside {
+    font-size: 15px;
+    text-decoration: none;
+}
+form .botao-aside:hover {
+    text-decoration: underline;
+}
+form #botao-login-area {
+    padding-right: 5px;
+    display: flex;
+}
+form #botao-login {
+    margin-right: 5px;
+}
