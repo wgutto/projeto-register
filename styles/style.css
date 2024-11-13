@@ -36,7 +36,7 @@ section#register {
     overflow: hidden;
 
     background-color: #e74428;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.651);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.664);
     transition: width .3s, height .3s;
     transform: translate(-50%, -50%);
 }
@@ -119,6 +119,9 @@ form .botao-aside:hover {
 form #botao-login-area {
     padding-right: 5px;
     display: flex;
+}
+form #botao-login-area a {
+    margin-right: 5px;
 }
 form #botao-login {
     margin-right: 5px;
