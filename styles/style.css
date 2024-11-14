@@ -120,10 +120,10 @@ form .botao-aside {
 form .botao-aside:hover {
     text-decoration: underline;
 }
-form #botao-login-area {
+form #botao-cadastro-area {
     padding-right: 5px;
     display: flex;
 }
-form #botao-login-area a {
+form #botao-cadastro-area a {
     margin-right: 5px;
 }
