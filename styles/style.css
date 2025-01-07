@@ -31,7 +31,6 @@ main {
 
 section#register {
     width: 350px;
-    height: 610px;
     border-radius: 20px;
     overflow: hidden;
 
@@ -92,6 +91,23 @@ form div.campo input {
     color: black;
 }
 
+#validador-area .validador-item {
+    display: flex;
+    align-items: center;
+}
+#validador-area span {
+    border-radius: 50%;
+    padding: 1px;
+    font-size: 14px;
+
+    color: red;
+    background-color: aliceblue;
+}
+#validador-area p {
+    font-size: 12px;
+    margin: 4px;
+}
+
 form #botao-registrar {
     display: block;
     width: 100%;
@@ -100,7 +116,7 @@ form #botao-registrar {
     border: none;
     font-weight: bolder;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
     cursor: pointer;
 
     color: white;

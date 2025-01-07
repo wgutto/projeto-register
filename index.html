@@ -20,23 +20,64 @@
                 <form action="" method="post" autocomplete="on">
                         <div class="campo">
                             <span class="material-icons">person</span> 
-                            <input type="text" name="nome" id="inome" autocomplete="name" required minlength="3" max="8" placeholder="seu nome"> 
+                            <input type="text" name="nome" id="inome" autocomplete="name" required minlength="3" max="8" placeholder="nome"> 
                             <label for="inome">Primeiro nome</label>
                         </div>
                         <div class="campo">
                             <span class="material-icons">person</span> 
-                            <input type="text" name="sobrenome" id="isobrenome" autocomplete="name" required minlength="3" maxlength="8" placeholder="seu sobrenome"> 
+                            <input type="text" name="sobrenome" id="isobrenome" autocomplete="name" required minlength="3" maxlength="8" placeholder="sobrenome"> 
                             <label for="isobrenome">Sobrenome</label>
                         </div>
                         <div class="campo">
                             <span class="material-icons">mail</span> 
-                            <input type="email" name="email" id="iemail" autocomplete="email" required minlength="8" placeholder="seu e-mail"> 
+                            <input type="email" name="email" id="iemail" autocomplete="email" required minlength="8" placeholder="e-mail"> 
                             <label for="iemail">E-mail</label>
                         </div>
                         <div class="campo">
-                            <span class="material-icons">vpn_key</span> 
-                            <input type="password" name="senha" id="isenha" autocomplete="new-password" required minlength="6" placeholder="sua senha"> 
+                            <span class="material-icons">password</span> 
+                            <input type="password" name="senha" id="isenha" placeholder="senha"> 
                             <label for="isenha">Senha</label>
+                        </div>
+
+                        <div id="validador-area">
+                            <div class="validador-item maiu-minu">
+                                <span class="material-icons">cancel</span> 
+                                <p class="validador-texto">Pelo menos um caractere maiúsculo e minúsculo.</p>
+                            </div>
+                        </div>
+
+                        <div id="validador-area">
+                            <div class="validador-item um-numero">
+                                <span class="material-icons">cancel</span> 
+                                <p class="validador-texto">Pelo menos um número.</p>
+                            </div>
+                        </div>
+
+                        <div id="validador-area">
+                            <div class="validador-item uma-caractere-especial">
+                                <span class="material-icons">cancel</span> 
+                                <p class="validador-texto">Pelo menos um caractere espececial (!@#$%&*?._).</p>
+                            </div>
+                        </div>
+
+                        <div id="validador-area">
+                            <div class="validador-item min-caractere">
+                                <span class="material-icons">cancel</span> 
+                                <p class="validador-texto">Pelo menos 6 caracters.</p>
+                            </div>
+                        </div>
+
+                        <div class="campo">
+                            <span class="material-icons">password</span> 
+                            <input type="password" name="senha" id="iconfirmarsenha" autocomplete="new-password" required minlength="6" placeholder="confirmar senha"> 
+                            <label for="isenha">Senha</label>
+                        </div>
+
+                        <div id="validador-area">
+                            <div class="validador-item">
+                                <span class="material-icons senhas-iguais">cancel</span> 
+                                <p class="validador-texto texto-c-s">Senhas não coindicem.</p>
+                            </div>
                         </div>
 
                         <input id="botao-registrar" type="submit" value="Registrar">
@@ -54,5 +95,7 @@
             </div>
         </section>
     </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
